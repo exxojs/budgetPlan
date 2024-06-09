@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50/30/20</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header-wrap" class="outer">
+    <header class="inner">
+      <h1 id="project_title">Budget Plan</h1>
+      <h2 id="project_tagline">— 50/30/20 —</h2>
+      </header>
+  </div>
+  
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+
+      <h1>50/30/20?</h1>
+        <p>"The 50/30/20 rule is a simple budgeting method used to break down your after-tax income into three spending categories: needs, wants and savings. This type of budgeting is a simpler alternative for those who are unlikely to track every bill or purchase." <a href="https://www.rocketmoney.com/learn/personal-finance/50-30-20-rule"><font style="font-weight: bold;">(Rocket Money, n.d.)</font></a></p>
+
+      <h2>Balance your earnings ↡↡↡</h2>
+
+      <div class="box">
+        <div class="inner-box">
+          <h2>Your Income After Tax</h2>
+          <select id="currency" style="border: solid rgba(88, 88, 88, 0.322) 1px; padding: 8px; border-radius: 10px; margin-bottom: 8px;">
+            <option value="PHP">₱ (Peso)</option>
+			<option value="EUR">€ (Euro)</option>
+            <option value="USD">$ (US dollar)</option>
+            <option value="JPY">¥ (Japanese yen)</option>
+            <option value="GBP">£ (British pound)</option>
+            <option value="AUD">A$ (Australian dollar)</option>
+            <option value="CAD">C$ (Canadian dollar)</option>
+            <option value="CHF">CHF (Swiss franc)</option>
+            <!-- Add more options for other currencies -->
+          </select>
+          <input id="income" type="number" placeholder="Enter income">
+          <button class="btn" onclick="calculateSplit()">Calculate Split</button>
+          <div id="result"></div>
+        </div>
+      </div>
+
+      <div class="inner-box">
+        <h2 style="font-style: italic;">Benefits</h2>
+        <ul style="margin: 12px; padding: 12px; margin-top: -20px;">
+          <li style="margin-bottom: 12px;"><p style="font-weight: bold;">Simple:</p> No need for detailed tracking </li>
+          <li style="margin-bottom: 12px;"><p style="font-weight: bold;">Beginner-friendly:</p> Ideal for straightforward and simple financial situations. </li>
+          <li style="margin-bottom: 12px;"><p style="font-weight: bold;">Begin With The End In Mind</p> -by balancing current needs with future savings.</li>
+          <li style="margin-bottom: -8px"><p style="font-weight: bold;">Realistic:</p>50/30/20 Rule is more practical than aggressive budgeting strategies. </li>
+
+        </ul>
+      </div>
+
+<h2>Tip:</h2>
+<p>If the calculated results seem off, adjust your lifestyle and spend wisely!</p>
+
+<div class="chigga" style="display: flex; justify-content: center; flex-flow: column; align-items: center;">
+	<h2>Contact</h2>
+<nav class="navbar">
+	<ul class="social-icons">
+		<li>
+		  <a href="https://www.facebook.com/JSEPH.Dz/" target="_blank" rel="noopener noreferrer">
+			<i class="fa-brands fa-facebook"></i>
+		  </a>
+		</li>
+		
+		<li>
+		  <a href="https://www.instagram.com/rai.hiroaki/" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		</li>
+		<li>
+		  <a href="https://www.instagram.com/reel/C0O7n-1NSUP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-linkedin-in"></i>
+		  </a>
+		</li>
+	  </ul>
+  </nav>
+</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/92839e2d3d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
